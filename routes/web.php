@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('XXX', 'AAAController＠bbb');
+    Route::get('adomin/profile/create', 'ProfileController@Action');
+    Route::get('adomin/profile/edit', 'ProfileController@Action');
+    });
